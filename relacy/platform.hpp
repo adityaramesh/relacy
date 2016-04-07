@@ -244,7 +244,7 @@ inline void switch_to_fiber(fiber_t& fib, fiber_t& prv)
 #   define RL_STRINGIZE_I(text) #text
 #   define RL_STRINGIZE(text) RL_STRINGIZE_I(text)
 #   define RL_STDCALL
-#   define RL_THROW_SPEC(ex) throw(ex)
+#   define RL_THROW_SPEC(ex) _GLIBCXX_THROW(ex)
 #endif
 
 
